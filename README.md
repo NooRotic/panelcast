@@ -6,7 +6,7 @@ Built with Electron, React 18, TypeScript, Socket.IO, simple-peer, FFmpeg and No
 
 Panelcast was called RTMP Hub Spot until November 2026.
 
-[![CI](https://github.com/NooRotic/rtmp-hub-spot/actions/workflows/ci.yml/badge.svg)](https://github.com/NooRotic/rtmp-hub-spot/actions/workflows/ci.yml)
+[![CI](https://github.com/NooRotic/panelcast/actions/workflows/ci.yml/badge.svg)](https://github.com/NooRotic/panelcast/actions/workflows/ci.yml)
 
 <!-- PLACEHOLDER (plan 004, H-3): replace this block with the 90-second demo clip link (YouTube, unlisted). -->
 > **Demo clip: not recorded yet.** A 90-second walkthrough (two guests join, the grid composites, the Broadcast Console relays to two destinations) will be linked here.
@@ -105,8 +105,8 @@ The release checklist is in [`docs/RELEASE-TODO.md`](docs/RELEASE-TODO.md), and 
 ### Install and run
 
 ```bash
-git clone https://github.com/NooRotic/rtmp-hub-spot.git
-cd rtmp-hub-spot
+git clone https://github.com/NooRotic/panelcast.git
+cd panelcast
 npm install
 npm run dev
 ```

@@ -237,9 +237,9 @@ Branch: `feat/og-meta`
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Panelcast" />
 <meta property="og:description" content="WebRTC→RTMP LAN hub with a Windows NT 4.0 face." />
-<meta property="og:image" content="https://raw.githubusercontent.com/NooRotic/rtmp-hub-spot/main/docs/media/og-1200x630.png" />
+<meta property="og:image" content="https://raw.githubusercontent.com/NooRotic/panelcast/main/docs/media/og-1200x630.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://raw.githubusercontent.com/NooRotic/rtmp-hub-spot/main/docs/media/og-1200x630.png" />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/NooRotic/panelcast/main/docs/media/og-1200x630.png" />
 ```
 Generate `docs/media/og-1200x630.png` with the `social-preview` skill from the best admin
 screenshot. Note: the SPA is served from the Electron app / LAN only, so the tag that actually
