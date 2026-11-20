@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### Changed
+- **Renamed to Panelcast** (formerly RTMP Hub Spot). The window title, guest lobby, admin title bar, startup error dialog, API docs title and the portable `.exe` name now say Panelcast. Saved settings, the recordings folder and the self-signed certificate keep their existing names and locations.
+
+---
+
 ## [1.1.0] — 2026-03-11
 
 ### Added (Tier 2 — UX)

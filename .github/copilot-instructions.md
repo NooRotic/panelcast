@@ -1,6 +1,6 @@
-# GitHub Copilot Instructions for RTMP Hub Spot
+# GitHub Copilot Instructions for Panelcast
 
-You are an expert AI developer working on the **RTMP Hub Spot** project. This is a complex hybrid application combining Electron, Node Media Server (RTMP), and WebRTC.
+You are an expert AI developer working on the **Panelcast** project (formerly RTMP Hub Spot). This is a complex hybrid application combining Electron, Node Media Server (RTMP), and WebRTC.
 
 ## 🚨 MANDATORY FIRST STEP 🚨
 

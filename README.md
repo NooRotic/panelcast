@@ -1,8 +1,10 @@
-# RTMP Hub Spot
+# Panelcast
 
 Guests join from a phone or laptop browser over WebRTC. The host's desktop app composites their cameras into one canvas grid, encodes it with FFmpeg, and publishes it to a built-in RTMP server that OBS and VLC can pull from. It can also relay any of its streams to YouTube, Twitch, Kick, TikTok, Facebook or a custom RTMP server, several at once, without re-encoding.
 
 Built with Electron, React 18, TypeScript, Socket.IO, simple-peer, FFmpeg and Node-Media-Server, with a dark take on the Windows NT 4.0 interface.
+
+Panelcast was called RTMP Hub Spot until November 2026.
 
 [![CI](https://github.com/NooRotic/rtmp-hub-spot/actions/workflows/ci.yml/badge.svg)](https://github.com/NooRotic/rtmp-hub-spot/actions/workflows/ci.yml)
 
@@ -161,7 +163,7 @@ If a source stays black in OBS, toggle its visibility (the eye icon) to force a 
 
 ## Security model
 
-RTMP Hub Spot is built for a local network you trust. This is what `main` does today.
+Panelcast is built for a local network you trust. This is what `main` does today.
 
 **In place:**
 

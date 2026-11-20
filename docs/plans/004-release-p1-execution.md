@@ -84,7 +84,7 @@ the single rewrite at the require site covers both.
 npm test -w server                 # 116 tests, all green (baseline)
 npm run release                    # builds client + electron-builder portable → dist/
 ```
-Then, on the build box, launch `dist/RTMP Hub Spot*.exe`: the admin window must open (proves
+Then, on the build box, launch `dist/Panelcast*.exe`: the admin window must open (proves
 `room-pin.js`/`local-ip.js` load) and `main.log` must NOT contain `Cannot find module` or `ENOENT
 ...ffmpeg`. Full behavioural validation is H‑1.
 
@@ -235,7 +235,7 @@ Branch: `feat/og-meta`
 ```html
 <meta name="description" content="WebRTC→RTMP LAN hub with a Windows NT 4.0 face. Guests join from a phone; the host composites a grid and fans it out to OBS, YouTube, Twitch." />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="RTMP Hub Spot" />
+<meta property="og:title" content="Panelcast" />
 <meta property="og:description" content="WebRTC→RTMP LAN hub with a Windows NT 4.0 face." />
 <meta property="og:image" content="https://raw.githubusercontent.com/NooRotic/rtmp-hub-spot/main/docs/media/og-1200x630.png" />
 <meta name="twitter:card" content="summary_large_image" />

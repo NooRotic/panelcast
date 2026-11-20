@@ -35,7 +35,7 @@
     "socket.io": "^4.8.3"
   },
   "build": {
-    "productName": "RTMP Hub Spot",
+    "productName": "Panelcast",
     "appId": "com.noorotic.rtmphubspot",
     "directories": {
       "output": "../../dist"

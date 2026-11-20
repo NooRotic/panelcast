@@ -50,7 +50,7 @@ const Lobby: FC<LobbyProps> = ({ onJoin, initialName = '', wasKicked = false, de
   return (
     <div className="lobby-overlay">
       <div className="lobby-window window">
-        <div className="window-title">RTMP Hub Spot — Join Session</div>
+        <div className="window-title">Panelcast — Join Session</div>
         <div className="window-content" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {wasKicked && (
             <div style={{ background: '#fff0f0', border: '1px solid #cc0000', padding: '6px 10px', color: '#cc0000', fontSize: '11px', fontWeight: 'bold' }}>

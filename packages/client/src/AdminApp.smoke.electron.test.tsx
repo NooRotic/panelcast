@@ -78,7 +78,7 @@ describe('AdminApp (Electron host console) — characterization', () => {
 
   it('renders the Electron-only title bar', () => {
     render(<AdminApp />);
-    expect(screen.getByText(/RTMP HUB SPOT - ADMINISTRATOR/i)).toBeInTheDocument();
+    expect(screen.getByText(/PANELCAST - ADMINISTRATOR/i)).toBeInTheDocument();
     // Electron window title is "Admin Video Hub" (browser monitor shows "Admin Monitor").
     expect(screen.getByText('Admin Video Hub')).toBeInTheDocument();
   });

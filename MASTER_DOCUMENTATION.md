@@ -1,10 +1,10 @@
-# RTMP Hub Spot - Master Documentation
+# Panelcast - Master Documentation
 
 > **AI AGENT INSTRUCTION**: Before making any changes to this codebase, read this document thoroughly. It contains critical architectural decisions and solutions to "gotcha" issues that must be preserved.
 
 ## 1. Project Overview & Goals
 
-**RTMP Hub Spot** is a hybrid real-time communication platform that bridges WebRTC (low-latency peer-to-peer video) with RTMP (broadcast streaming).
+**Panelcast** (formerly RTMP Hub Spot) is a hybrid real-time communication platform that bridges WebRTC (low-latency peer-to-peer video) with RTMP (broadcast streaming).
 
 **Primary Goals:**
 
