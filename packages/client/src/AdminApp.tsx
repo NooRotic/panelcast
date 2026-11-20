@@ -261,7 +261,7 @@ function AdminApp() {
         <div className="app-title-bar ntd">
           <div className="app-title-text">
             <div style={{ width: '16px', height: '16px', backgroundColor: '#000080', border: '1px solid #fff' }}></div>
-            <span>RTMP HUB SPOT - ADMINISTRATOR</span>
+            <span>PANELCAST - ADMINISTRATOR</span>
           </div>
           <div className="window-controls">
             <button className="window-control-btn" onClick={() => (window as any).electron?.ipcRenderer?.send('window-minimize')}>0</button>

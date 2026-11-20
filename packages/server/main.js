@@ -218,7 +218,7 @@ async function initializeServer() {
   nms.run();
 
   console.log('[SSL] Generating self-signed certificates...');
-  const sslAttrs = [{ name: 'commonName', value: 'rtmp-hub-spot.local' }];
+  const sslAttrs = [{ name: 'commonName', value: 'panelcast.local' }];
   let sslPems;
   try {
     sslPems = await selfsigned.generate(sslAttrs, { days: 365 });
@@ -523,7 +523,7 @@ initializeServer().then(({ nms, server, io }) => {
   log.error('[CRITICAL] Server Initialization Failed:', err);
   try {
     dialog.showErrorBox(
-      'RTMP Hub Spot — startup failed',
+      'Panelcast — startup failed',
       `The media server could not start:\n\n${(err && err.message) ? err.message : String(err)}\n\n` +
       `A required port may already be in use (RTMP 1935, signaling 4001, or NMS HTTP 8000). ` +
       `Close other streaming apps (OBS/XSplit) or another running copy of this app, then relaunch.\n\n` +

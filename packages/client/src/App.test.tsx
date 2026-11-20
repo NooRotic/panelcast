@@ -39,7 +39,7 @@ afterEach(cleanup);
 describe('App routing (browser/participant mode)', () => {
   it('renders the participant lobby (Join Session) in jsdom — not the admin console', () => {
     render(<App />);
-    // ClientPortal shows Lobby first: "RTMP Hub Spot — Join Session"
+    // ClientPortal shows Lobby first: "Panelcast — Join Session"
     expect(screen.getByText(/join session/i)).toBeInTheDocument();
     // Admin-only content must not be present
     expect(screen.queryByText(/System Status|Admin Video Hub/i)).toBeNull();

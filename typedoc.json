@@ -5,7 +5,7 @@
     "packages/client/src/hooks/useWebRTC.ts"
   ],
   "out": "jsDocs",
-  "name": "RTMP Hub Spot API Docs",
+  "name": "Panelcast API Docs",
   "readme": "README.md",
   "plugin": ["typedoc-plugin-missing-exports"],
   "compilerOptions": {

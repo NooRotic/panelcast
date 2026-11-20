@@ -1,4 +1,4 @@
-# RTMP Hub Spot — Public Release / MVP TODO
+# Panelcast — Public Release / MVP TODO
 
 _Created 2026-07-06. Consolidated from a full code review (security + packaging sweeps) plus the
 strategy in `PUBLIC-RELEASE-v1.md`. Priorities: **P1 = must-do before release**, **P2 = should-do

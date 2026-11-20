@@ -26,7 +26,7 @@ export type Platform =
  * not under the Free `-c copy` relay.
  */
 export interface WatermarkConfig {
-  /** Text mark (e.g. "RTMP Hub"); used when logoPath is absent. */
+  /** Text mark (e.g. "Panelcast"); used when logoPath is absent. */
   text?: string;
   /** Path to a logo image to overlay. */
   logoPath?: string;

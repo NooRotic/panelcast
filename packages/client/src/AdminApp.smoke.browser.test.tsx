@@ -96,7 +96,7 @@ describe('AdminApp (browser ?role=admin monitor mode) — characterization', () 
     // Non-Electron broadcast lane shows the read-only monitor chip.
     expect(screen.getByText(/monitor mode/i)).toBeInTheDocument();
     // Electron-only title bar string must NOT appear in browser mode.
-    expect(screen.queryByText(/RTMP HUB SPOT - ADMINISTRATOR/i)).toBeNull();
+    expect(screen.queryByText(/PANELCAST - ADMINISTRATOR/i)).toBeNull();
   });
 
   it('renders the persistent BroadcastConsole region', () => {
