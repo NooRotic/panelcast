@@ -19,7 +19,7 @@ Panelcast was called RTMP Hub Spot until November 2026.
 ## Status
 
 - **Run it from source.** There is no downloadable build or GitHub Release yet.
-- **The packaged `.exe` doesn't start on `main` yet.** `npm run release` builds a portable Windows `.exe`, but two server modules are missing from the package list and the FFmpeg binary is packed inside `app.asar`, where it can't run. A fix is in progress.
+- **The packaged `.exe` starts.** `npm run release` builds a portable Windows `.exe` (`dist/Panelcast 1.1.0.exe`, about 110 MB). The packaging fixes from [#22](https://github.com/NooRotic/panelcast/pull/22) are on `main`. On November 20, 2026, a fresh build launched, loaded the admin window, opened the RTMP server on port 1935 and the guest page on port 4001, and ran FFmpeg's encoder check. Still to check with the packaged build: a guest joining, a broadcast, and a first run on a clean Windows machine.
 - **Checked on real hardware (July 2026):** switching cameras mid-session, the LAN address the hub advertises, and window placement on the stage.
 - **Not confirmed yet:** a long, stable grid broadcast into OBS. The runtime encoder check described below is the suspected fix for a broadcast that used to stop on its own; a 10-minute run on real hardware is still to do.
 - **Not tested against live platforms yet:** relaying to two or more real destinations at once. The relay code has unit tests.
