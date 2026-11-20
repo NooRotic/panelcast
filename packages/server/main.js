@@ -218,7 +218,7 @@ async function initializeServer() {
   nms.run();
 
   console.log('[SSL] Generating self-signed certificates...');
-  const sslAttrs = [{ name: 'commonName', value: 'rtmp-hub-spot.local' }];
+  const sslAttrs = [{ name: 'commonName', value: 'panelcast.local' }];
   let sslPems;
   try {
     sslPems = await selfsigned.generate(sslAttrs, { days: 365 });
