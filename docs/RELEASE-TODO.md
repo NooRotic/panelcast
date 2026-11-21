@@ -22,19 +22,27 @@ along the way (the fixes are cheap and a download link to a broken `.exe` is wor
 
 ## P1 — MUST DO before release
 
-### P1‑Packaging — the shipped build is currently broken (do these together, then smoke-test)
-- [ ] **Add `room-pin.js` + `local-ip.js` to `build.files`.** `packages/server/package.json:43-60`
+### P1‑Packaging (the two fixes merged in #22; the clean-box smoke test is still open)
+- [x] **Add `room-pin.js` + `local-ip.js` to `build.files`.** `packages/server/package.json:43-60`
       enumerates files, which *replaces* electron-builder's default `**/*`; both are `require()`d at
       startup (`main.js:27-28`) → packaged app throws `Cannot find module` on launch. `local-ip.js` is
       the file we just added in #17, so it's brand-new and un-listed. (Simplest: replace the list with a
       glob that excludes `*.test.js`.) **S**
-- [ ] **`asarUnpack` the ffmpeg-static binary + rewrite its path.** No `asarUnpack` exists, so
+      _Done in #22 (merged 2026-11-13): `build.files` is now `*.js` plus `!*.test.js`, and
+      `package-files.test.js` guards it._
+- [x] **`asarUnpack` the ffmpeg-static binary + rewrite its path.** No `asarUnpack` exists, so
       `ffmpeg.exe` gets packed inside `app.asar` and cannot be spawned → **all broadcasting + recording
       fail** in the packaged app (`main.js:64` `setFfmpegPath(ffmpegStatic)`, spawn at `:667`). Add
       `"asarUnpack": ["**/node_modules/ffmpeg-static/**"]` and `ffmpegStatic.replace('app.asar','app.asar.unpacked')`. **S**
+      _Done in #22 (merged 2026-11-13): both are in, and the same PR also bundles `client/dist` as
+      `extraResources` so the admin window loads in the packaged app._
 - [ ] **Smoke-test the portable `.exe` on a clean Windows box** — launches, sets a PIN, a guest joins,
       grid broadcast reaches OBS/VLC, a recording finalizes. Validates the two fixes above + the
       cold-start load race (S7). **M**
+      _2026-11-20, partial check on the dev machine (not a clean box): a fresh build from `main`
+      launched, loaded the admin window, opened ports 1935 and 4001, and ran FFmpeg's encoder check.
+      Still to do: set a PIN, a guest joins, a broadcast reaches OBS/VLC, a recording finalizes, and
+      all of it on a clean box._
 
 ### P1‑Security — unsafe to publish as a product (path B)
 - [ ] **Authenticate the RTMP ingest (`:1935`).** The PIN only guards WebRTC signaling, not publishing
